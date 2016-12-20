@@ -13,12 +13,13 @@ do {
     if (res) {
     	//eliminate spaces 
     	res[i].replace(/\s/g, '')
-        //res[i] = res[i].replace("،", "/");
+        res[i] = res[i].replace("،", "/");
+      //res[i] = res[i].replace(",", "/");
    		res[i] = res[i].replace("-", "/");
    		res[i] = res[i].replace(/\s/g, '')
    		var xval=regexX.exec(res[i]);//get the X value
    		var yval=regexY.exec(res[i]);//get the y value
-   		while (xval != null && yval != null) {
+/*   		while (xval != null && yval != null) {
      		//console.log(yval[1])
 
 	 		//if there is no points in a string means index will be -1 
@@ -33,7 +34,7 @@ do {
 	   		var xval=regexX.exec(res[i]);
 	   		var yval=regexY.exec(res[i]);//stop the loop
 
-		}
+		}*/
 		log_file.write(res[i].replace(/\s/g, '') +"\n");
 
         i++

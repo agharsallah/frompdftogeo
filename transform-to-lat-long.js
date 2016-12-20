@@ -19,7 +19,7 @@ fs.readFile("ezouhour-coord.txt", 'utf8', function(err, data) {
     do {
       xres = XcordReg.exec(data);
       yres = YcordReg.exec(data);
-      if (xres) {
+      if (xres && yres) {
            /*remove all spaces*/
           var x = xres[1].replace(/\s/g, '');
           //console.log(x)
