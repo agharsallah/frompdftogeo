@@ -5,9 +5,12 @@ var XcordReg = /=(.*)\//g // matches from beg till the /
 var YcordReg=/\/.*?=(.*?)\)/g //matches from / till )
 var log_file = fs.createWriteStream(__dirname + '/_Final_ezouhour-coord.log', {flags : 'w'});
 
+var proj4 = require('proj4');
+var FromProjXY = '+proj=utm +zone=32 +ellps=intl +towgs84=-87,-98,-121,0,0,0,0 +units=m +no_defs';
+var ToProjLatLong = '+proj=longlat +datum=WGS84 +no_defs ';
 
 
-eval(fs.readFileSync('./convert-functions.js')+'');
+//eval(fs.readFileSync('./convert-functions.js')+'');
 
 fs.readFile("ezouhour-coord.txt", 'utf8', function(err, data) {
   if (err) throw err;
@@ -22,7 +25,10 @@ fs.readFile("ezouhour-coord.txt", 'utf8', function(err, data) {
           //console.log(x)
           var y = yres[1].replace(/\s/g, '');
           //console.log(y)
-          xy2utm(x,y);
+        var finalCoord  = proj4(FromProjXY,ToProjLatLong,[x,y])
+
+     log_file.write('['+finalCoord+'], \n')
+
       }
     } while (xres);  
   
