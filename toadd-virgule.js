@@ -6,7 +6,6 @@ var res,xval,yval ;
 var log_file = fs.createWriteStream(__dirname + '/ezouhour-coord.txt', {flags : 'w'});
 fs.readFile("hassi-el-ferid.txt", 'utf8', function(err, data) {
   if (err) throw err;
-
 do {
 	var i = 0;
     res = regex.exec(data);
@@ -14,8 +13,8 @@ do {
     	//eliminate spaces 
     	res[i].replace(/\s/g, '')
         res[i] = res[i].replace("،", "/");
-      //res[i] = res[i].replace(",", "/");
-   		res[i] = res[i].replace("-", "/");
+        //res[i] = res[i].replace(",", "/");
+   		//res[i] = res[i].replace("-", "/");
    		res[i] = res[i].replace(/\s/g, '')
    		var xval=regexX.exec(res[i]);//get the X value
    		var yval=regexY.exec(res[i]);//get the y value
