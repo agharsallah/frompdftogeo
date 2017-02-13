@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.1">
+<qgis projectname="" version="2.18.3">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -16,10 +16,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>189.00288425349114618</xmin>
-      <ymin>-346.58969026975375982</ymin>
-      <xmax>331.31069613831743936</xmax>
-      <ymax>-200.90698956552492405</ymax>
+      <xmin>241.67370748787698176</xmin>
+      <ymin>-311.00813192161228926</ymin>
+      <xmax>499.82846827667708567</xmax>
+      <ymax>-46.7311238413784622</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -199,7 +199,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="citizens" index="1" name=""/>
@@ -217,10 +217,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>

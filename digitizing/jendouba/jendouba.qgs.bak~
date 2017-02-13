@@ -16,10 +16,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>149.07939034221953989</xmin>
-      <ymin>-429.02561519813298219</ymin>
-      <xmax>444.92711061995714772</xmax>
-      <ymax>-126.16174345135914336</ymax>
+      <xmin>189.00288425349114618</xmin>
+      <ymin>-346.58969026975375982</ymin>
+      <xmax>331.31069613831743936</xmax>
+      <ymax>-200.90698956552492405</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -124,7 +124,7 @@
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">ogr</provider>
-      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
+      <previewExpression>COALESCE( "name_en", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
